@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>송채은 소개 홈페이지</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #e8f4ff, #fff7d6);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      color: #ff5f9e;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .profile-card {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 28px;
+      padding: 38px;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .profile-img {
+      width: 145px;
+      height: 145px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ffb6d5, #ffd76b);
+      margin: 0 auto 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 62px;
+      box-shadow: 0 10px 24px rgba(255, 95, 158, 0.25);
+    }
+
+    .profile-card h2 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .profile-card .age {
+      color: #ff5f9e;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 24px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    }
+
+    .section h3 {
+      font-size: 24px;
+      color: #ff5f9e;
+      margin-bottom: 14px;
+    }
+
+    .section p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    .tag {
+      background: #fff0f6;
+      color: #ff5f9e;
+      padding: 9px 15px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .heart-section {
+      text-align: center;
+      padding: 35px;
+    }
+
+    button {
+      border: none;
+      background: #ff5f9e;
+      color: white;
+      padding: 15px 28px;
+      border-radius: 999px;
+      font-size: 17px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 0 8px 20px rgba(255, 95, 158, 0.35);
+    }
+
+    button:hover {
+      background: #ff3f89;
+      transform: translateY(-2px);
+    }
+
+    #heartBox {
+      min-height: 90px;
+      margin-top: 25px;
+      font-size: 64px;
+    }
+
+    .heart {
+      display: inline-block;
+      animation: heartPop 0.5s ease;
+    }
+
+    @keyframes heartPop {
+      0% {
+        transform: scale(0.2);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.25);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      padding: 15px 0 40px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .profile-card,
+      .section {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>송채은을 소개합니다</h1>
+      <p>다시 시작하는 힘을 가진 사람</p>
+    </header>
+
+    <section class="profile-card">
+      <div class="profile-img">🌷</div>
+      <h2>송채은</h2>
+      <p class="age">28살</p>
+      <p>
+        안녕하세요. 저는 송채은입니다.<br />
+        힘든 시간을 지나왔지만, 다시 제 삶을 만들어가고 있습니다.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>나의 이야기</h3>
+      <p>
+        예전에는 우울증, ADHD, 조현병으로 힘든 시간을 보냈습니다.
+        하지만 저는 포기하지 않았고, 우울증과 ADHD는 스스로 극복해냈습니다.
+        그 과정에서 저 자신을 더 깊이 이해하게 되었고, 다시 앞으로 나아가는 힘을 배웠습니다.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>지금의 나</h3>
+      <p>
+        지금은 영상편집과 촬영 강의를 들으며 새로운 기술을 배우고 있습니다.
+        또한 콜상담 아르바이트를 준비하며 사회생활도 차근차근 시작하려고 합니다.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>앞으로의 계획</h3>
+      <p>
+        2학기부터는 학교에 다시 다닐 예정입니다.
+        완벽하지 않아도 괜찮다고 생각합니다.
+        중요한 건 멈추지 않고, 나만의 속도로 계속 걸어가는 것입니다.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>키워드</h3>
+      <div class="tag-list">
+        <span class="tag">회복</span>
+        <span class="tag">도전</span>
+        <span class="tag">영상편집</span>
+        <span class="tag">촬영</span>
+        <span class="tag">콜상담 준비</span>
+        <span class="tag">복학 예정</span>
+      </div>
+    </section>
+
+    <section class="section heart-section">
+      <h3>응원의 하트</h3>
+      <p>버튼을 누르면 채은이를 위한 하트가 떠요.</p>
+      <br />
+      <button onclick="showHeart()">하트 띄우기</button>
+      <div id="heartBox"></div>
+    </section>
+
+    <footer>
+      © 2026 송채은 소개 홈페이지
+    </footer>
+  </div>
+
+  <script>
+    function showHeart() {
+      const heartBox = document.getElementById("heartBox");
+      heartBox.innerHTML = '<span class="heart">💖</span>';
+    }
+  </script>
+</body>
+</html>
